@@ -6,11 +6,11 @@
 }
 
 :root {
-    --bg-dark: #0d1117;
+    --bg-dark: #161618;
     --text-light: #ffffff;
-    --text-muted: #888888;
-    --accent-blue: #4a9eff;
-    --accent-orange: #ff8c42;
+    --text-muted: #a1a1aa;
+    --accent-blue: #3b82f6;
+    --accent-orange: #7c3aed;
 }
 
 html {
