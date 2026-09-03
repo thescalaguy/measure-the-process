@@ -179,6 +179,7 @@ body {
     font-weight: 700;
     margin-bottom: 2rem;
     letter-spacing: 0.05em;
+    line-height: 1.1;
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.6s ease, transform 0.6s ease;
@@ -189,7 +190,9 @@ body {
     max-width: 600px;
     line-height: 1.8;
     color: var(--text-muted);
+    margin-top: 0;
     margin-bottom: 4rem;
+    padding-top: 0;
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.6s ease 0.2s, transform 0.6s ease 0.2s;
@@ -198,6 +201,7 @@ body {
 /* Two-Column Layout for All Main Sections */
 .consultancy-grid,
 .philosophy-grid,
+.research-grid,
 .approach-grid,
 .team-grid,
 .contact-grid {
@@ -209,6 +213,7 @@ body {
 
 .consultancy-left,
 .philosophy-left,
+.research-left,
 .approach-left,
 .team-left,
 .contact-left {
@@ -218,6 +223,7 @@ body {
 
 .consultancy-left .section-label,
 .philosophy-left .section-label,
+.research-left .section-label,
 .approach-left .section-label,
 .team-left .section-label,
 .contact-left .section-label {
@@ -225,8 +231,32 @@ body {
     margin-bottom: 1rem;
 }
 
+.consultancy-left .section-title,
+.philosophy-left .section-title,
+.research-left .section-title,
+.approach-left .section-title,
+.team-left .section-title,
+.contact-left .section-title {
+    margin-bottom: 0;
+    padding-top: 0.15rem;
+}
+
+/* Align all right column content with left column titles */
+.consultancy-right > *:first-child,
+.philosophy-right > *:first-child,
+.research-right > *:first-child,
+.approach-right > *:first-child,
+.team-right > *:first-child,
+.contact-right > *:first-child {
+    margin-top: 0;
+}
+
 .consultancy-right .section-intro {
     margin-bottom: 3rem;
+}
+
+.philosophy-right .section-intro {
+    margin-bottom: 2rem;
 }
 
 .philosophy-right .section-content {
@@ -237,8 +267,23 @@ body {
     margin-bottom: 3rem;
 }
 
+.research-right .section-intro {
+    margin-bottom: 2rem;
+}
+
+/* Research Buttons */
+.research-buttons {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
 .section-statements {
-    margin-top: 3rem;
+    margin-top: 0;
+}
+
+.section-statements:first-child {
+    margin-top: 0;
 }
 
 .statement {
@@ -248,6 +293,10 @@ body {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.6s ease 0.4s, transform 0.6s ease 0.4s;
+}
+
+.statement:first-child {
+    margin-top: 0;
 }
 
 .statement-accent {
@@ -265,6 +314,10 @@ body {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.approach-step:first-child {
+    margin-top: 0;
 }
 
 .approach-step.step-visible {
@@ -296,7 +349,7 @@ body {
 
 /* Team Section */
 .team-members {
-    margin-top: 2rem;
+    margin-top: 0;
 }
 
 .team-member {
@@ -304,6 +357,10 @@ body {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.team-member:first-child {
+    margin-top: 0;
 }
 
 .member-label {
@@ -338,6 +395,7 @@ body {
     line-height: 1.8;
     color: var(--text-muted);
     max-width: 650px;
+    margin-top: 0;
 }
 
 .cta-button {
@@ -433,6 +491,7 @@ body {
 
     .consultancy-grid,
     .philosophy-grid,
+    .research-grid,
     .approach-grid,
     .team-grid,
     .contact-grid {
@@ -442,6 +501,7 @@ body {
 
     .consultancy-left,
     .philosophy-left,
+    .research-left,
     .approach-left,
     .team-left,
     .contact-left {
